@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="formsassignment.css">
+  <script type="text/javascript">
+    function validate () {
+      var name = document.getElementById("name");
+      var Username = document.getElementById("uname");
+      var Email = document.getElementById("email");
+      var Password = document.getElementById("pwd");
+      var ConfirmPassword = document.getElementById("pwd2");
+      var Message = document.getElementById("msg");
+      if (name.value == "" || Uname.value == "" || Email.value == "" || Password.value == "" || ConfirmPassword.value == "" || Message.value == "") {
+        alert("No Blank Values Allowed");
+        return false;
+      } else {
+        return true
+      }
+    }
+
+  </script>
+</head>
+<body>
+<form onsubmit="return validate()" action="">
+  <legend>Bootstrap 4 Form Validation Demo</legend>
+  <br><br>
+  <hr>
+  <br>
+  <div  class="form">
+  <label for="name">Name:</label> <br>
+  <input type="text" id="name" placeholder="Name"> <br> <br>
+
+  <label for="uname">Username:</label> <br>
+  <input type="text" id="uname" placeholder="Username"> <br> <br>
+
+  <label for="email">Email:</label> <br>
+  <input type="email" id="email" placeholder="Email"> <br> <br>
+
+  <label for="pwd">Password:</label> <br>
+  <input type="password" id="pwd" placeholder="Password"> <br> <br>
+
+  <label for="pwd2">Confirm Password:</label> <br>
+  <input type="password" id="pwd2" placeholder="Confirm Password" > <br> <br>
+
+  <label for="msg">Message</label> <br>
+  <textarea name="Message" id="msg" cols="65" rows="2" placeholder="Message"></textarea> <br> <br>
+
+  <input type="Submit" value="Submit" class="submit">
+    </div>
+</form>
+</body>
+</html>
